@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestPracticeFrom {
+public class TestPracticeFrom extends TestBase {
 
     @BeforeAll
     static void maxSized() {
@@ -21,7 +21,7 @@ public class TestPracticeFrom {
     @Test
     void formToFill() {
 
-        open("https://demoqa.com/automation-practice-form"); //open form
+       open("https://demoqa.com/automation-practice-form"); //open form
 
         $(byId("firstName")).setValue("Idel"); //Name
         $(byId("lastName")).setValue("Fatk"); //last name
